@@ -1,5 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1>
-  {{title}} - from Angular CLI
-</h1>
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+    <app-header></app-header>
+  </div>
+  <div class="row">
+    <app-todo-item *ngFor="let r of todos" [todo]="r"></app-todo-item>
+  </div>
+  <div class="row">
+    <app-row *ngFor="let r of rows" [row]="r"></app-row>
+  </div>
+</div>
+
